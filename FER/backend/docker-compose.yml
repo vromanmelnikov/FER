@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+
+
+  server1:
+    build: ./back2
+    ports:
+      - 3001:3001
+    expose:
+      - 3001
+    command: python app.py
+    
+  server2:
+    build: ./back
+    ports:
+      - 3000:3000
+    expose:
+      - 3000
+    depends_on:
+      - server1
+    command: python3 main.py
+
+
+
+###################################
+#  set up frontend container
+###################################
+
+#  frontend:
+#    build: ./frontend
+#    ports:
+#      - 3000:3000
+#    expose:
+#      - 3000
+#    depends_on:
+#      - server
+#    command: node app.js
+    # volumes:
+    #   - ./frontend:/app
+
+

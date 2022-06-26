@@ -1,0 +1,203 @@
+@import "variables";
+
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.scss";
+@import "./layout/sidebar";
+@import "./layout/container";
+
+#range {
+    width: 100%;
+}
+
+video {
+    border-radius: 5px;
+}
+
+// #cvs{
+//     width: 100%;
+//     position: inherit;
+//     top: -50%;
+//     left: 0;
+// }
+
+.webcam-rec {
+    width: 40%;
+
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.test-webcam-container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.test-webcam-container > video {
+    width: 90%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.test-webcam-container > canvas {
+    width: 90% !important;
+    position: relative !important;
+    top: -50% !important;
+    left: 0;
+    z-index: 99999;
+}
+
+.logo-link {
+    width: 100%;
+}
+
+.logo {
+    // width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.webcam-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.webcam-cvs {
+    width: 40%;
+    position: absolute !important;
+    top: -50% !important;
+    left: 50%;
+    z-index: 99999;
+}
+
+.Test {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.test-frame {
+    height: 500px;
+}
+
+.test-webcam {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.show-alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.alert-danger {
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 990px) {
+    .logo>img {
+        width: 100px;
+    }
+
+    .Test {
+        flex-direction: row;
+    }
+
+    .test-frame {
+        width: 65%;
+        // background-color: antiquewhite;
+    }
+
+    .test-webcam {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .logo>img {
+        width: 50px;
+    }
+
+    .Test {
+        flex-direction: column;
+    }
+
+    .test-frame {
+        width: 100%;
+        // background-color: antiquewhite;
+    }
+
+    .test-webcam {
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
+
+.webcam {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.webgazer {
+    margin-top: 1rem;
+}
+
+#webgazerGazeDot {
+    width: 20px !important;
+    height: 20px !important;
+    background-color: blue !important;
+    opacity: 0.8 !important;
+}
+
+.data {
+    margin-top: 1rem;
+}
+
+.mostly-attr {
+    color: red
+}
+
+.btn-group {
+    margin-top: 0.5rem !important;
+}
+
+.margin-top-bottom {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.active>a {
+    color: white !important;
+}
+
+.active>a:hover {
+
+    color: white !important
+}
+
+.link {
+    text-decoration: none;
+}
